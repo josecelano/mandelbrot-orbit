@@ -4,7 +4,7 @@ This program generates the orbit for a given Mandelbrot point. Something like:
 
 ![Orbit of a mandelbrot point](mandelbrot-orbit-sample.png)
 
-That the orbit of point (-1.3,0) which has period 4.
+That's the orbit of point (-1.3,0) which has period 4.
 
 ### Math
 
@@ -64,6 +64,7 @@ You could see this error:
   GLib.source_remove(self._idle_draw_id)
 ```
 It seems to be a known issue pending to release:
+
 https://stackoverflow.com/questions/29540845/how-can-i-deactivate-warning-source-id-510-was-not-found-when-attempting-to-re
 
 ### TODO
