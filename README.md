@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/josecelano/mandelbrot-orbit.svg?branch=master)](https://travis-ci.com/josecelano/mandelbrot-orbit)
+
 ## Mandelbrot Orbit
 
 This program generates the orbit for a given Mandelbrot point. Something like:
