@@ -71,4 +71,4 @@ https://stackoverflow.com/questions/29540845/how-can-i-deactivate-warning-source
 
 ### TODO
 
-* Although calculations are done with arbitrary precision library the `matplotlib` package uses a float type for data source so we cannot plot point with greater precision than float precision.
+* Although calculations are done with an arbitrary precision library, we use `matplotlib` to generate the graph and that package uses a float type for data source so we cannot plot a point with greater precision than the language float precision.
