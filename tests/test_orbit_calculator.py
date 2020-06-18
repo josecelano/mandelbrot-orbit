@@ -14,7 +14,6 @@ class OrbitCalculatorTest(unittest.TestCase):
         self.assertEqual(['0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0', '0.0'], orbit_im)
 
     def test_orbit_of_point_that_tends_to_a_fixed_point(self):
-        # Period 1
         c = mpmath.mpc(real='-0.1', imag='0.1')
 
         orbit_re, orbit_im = OrbitCalculator.generate(c, 10)
@@ -45,7 +44,6 @@ class OrbitCalculatorTest(unittest.TestCase):
         ], orbit_im)
 
     def test_orbit_of_point_with_period_4(self):
-        # Period 1
         c = mpmath.mpc(real='-1.3', imag='0')
 
         orbit_re, orbit_im = OrbitCalculator.generate(c, 10)
