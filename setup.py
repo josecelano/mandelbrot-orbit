@@ -16,7 +16,7 @@ with open("README.rst", "rb") as f:
     long_desc = f.read().decode("utf-8")
 
 setup(
-    name="cmdline-bootstrap",
+    name="mandelbrot_orbit",
     packages=["mandelbrot_orbit"],
     entry_points={
         "console_scripts": ['mandelbrot-orbit = mandelbrot_orbit.mandelbrot_orbit:main']

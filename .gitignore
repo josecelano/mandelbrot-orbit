@@ -3,3 +3,5 @@ tests/output
 output
 mandelbrot-orbit.png
 build
+dist
+mandelbrot_orbit.egg-info
