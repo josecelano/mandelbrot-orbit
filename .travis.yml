@@ -1,14 +1,18 @@
 language: python
 sudo: false
-
 services:
   - docker
-
 os:
   - linux
-
 script:
-  - ./bin/dev-setup
-  - ./bin/test
-  - ./bin/install
+  - "./bin/dev-setup"
+  - "./bin/test"
+  - "./bin/install"
   - mandelbrot-orbit -1.3 0.0 100
+deploy:
+  provider: pypi
+  username: __token__
+  password:
+    secure: FpZwxmPygcJii/FBfEaEtsK6p0bGQVYq8b8AwguMmN/+h9tIMofKq1WRETjiEGYz/XBTjy4EFREcFreVa0UdtPmQKj+fjL6rWQAXASr+daR0Fnduo9LTrN3kDSdU77NF7RX4uNQsQaR0SRKZk9lnJExSvJdlBFW6TTH5xQRv28S9WK5nsqXbMys1mb6QyWysxwKulx8s2iQEanqxyIoL4RsxrXHoGe49U1ZCW5GU6gP1wQME77/F1Bt2WhLHIOxvaC6hgfBdY3MHP/9UTg8EXg+EicS/iFxX8acbjE/A+xagAPO+Ar1jEihneWVJPHNPf3AKakiWp9geEtMB9FF5qnGBvbzW9O7ZwuVeqysiW9Xv9xnupS0HZPmPWNqLQDQCQWTcP06u4/RUA/Hz+IOdiX7Sn0FzFN78yUwYb6c8IgIZhNb4uakrO43RZ7avWvuA7TZsnfWCOWRuQVAd5YeJga18cORCLqsxxKVo0prHb3PVnILzptL8OC43kBJcLtHu38Mf2k1B0+CKKIqXWoxzDojjNEpFrLxUJnH0V/svYeNzMgjUqstFgK/l6nGd0yOnxrm1AxCqalIzgmkGccm0ujRJ2XYElWqETnmLEZxmmejHDDag+3uZJF4vHe4w8TH7kot6fzFcw95aPZFT7wBvr7d5UEJvxB7udOLxjC/N0aA=
+  on:
+    branch: master

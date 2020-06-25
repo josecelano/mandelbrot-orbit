@@ -1,7 +1,10 @@
 __pycache__/
-tests/output
-output
+# oputput files
 mandelbrot-orbit.png
+# build package
 build
 dist
 mandelbrot_orbit.egg-info
+# travis
+travis.log
+input.txt
