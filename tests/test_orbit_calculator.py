@@ -1,7 +1,7 @@
 import unittest
 import mpmath
 
-from mandelbrot.orbit_calculator import OrbitCalculator
+from mandelbrot_orbit.orbit_calculator import OrbitCalculator
 
 
 class OrbitCalculatorTest(unittest.TestCase):

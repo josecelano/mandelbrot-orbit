@@ -27,36 +27,40 @@ This python script plots the series for a given complex point.
 
 ```
 Python 3.6.9
-Pillow 7.0.0
 pytest-5.3.5
 ```
 
-### Dev setup
+### Usage
 
+Install:
+```
+./bin/install
+```
+
+Run:
+```
+mandelbrot-orbit '{ZX}' '{ZY}' {NUM_ITERATIONS}
+mandelbrot-orbit -0.1 0.7 100
+```
+
+The script generates an image: `mandelbrot-orbit.png`
+
+### Development
+
+Setup:
 ```bash
 ./bin/dev-setup
 ```
 
-### Running the tests
-
+Running the tests:
 ```bash
 ./bin/test
 ```
 
-### Run with docker
-
+Run:
 ```bash
 ./bin/run '-0.1' '0.7' 100
 ```
-
-### Run
-
-```
-python3 ./mandelbrot-orbit.py '{ZX}' '{ZY}' {NUM_ITERATIONS}
-python3 ./mandelbrot-orbit.py '-0.1' '0.7' 100
-```
-
-The script generates an image in root folder: `mandelbrot-orbit.png`
 
 ### Troubleshooting
 

@@ -1,1 +1,1 @@
-pip3 install -U matplotlib numpy mpmath
+python3 setup.py install

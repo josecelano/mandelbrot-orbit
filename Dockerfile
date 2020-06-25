@@ -1,10 +1,11 @@
 FROM python:3.6.9
 
 RUN pip install --upgrade pip \
-    && pip3 install Pillow \
-    && pip3 install -U pytest matplotlib numpy mpmath
+    && pip3 install -U pytest
 
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 
-CMD ["python3", "/usr/src/app/mandelbrot-orbit.py"]
+RUN ./bin/install
+
+CMD ["python3", "/usr/src/app/mandelbrot-orbit-runner.py"]
