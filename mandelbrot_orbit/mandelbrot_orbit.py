@@ -3,7 +3,7 @@
 
 """mandelbrot_orbit.mandelbrot_orbit: provides entry point main()."""
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 import sys
 
@@ -20,6 +20,7 @@ def main():
     zx = sys.argv[1]
     zy = sys.argv[2]
     num_iterations = int(sys.argv[3])
+    filepath = sys.argv[4]
 
     print("Generation of orbit for point (", zx, " , ", zy, ") with ", num_iterations, " iterations ...")
 
@@ -46,4 +47,4 @@ def main():
     plt.xlim([0, 100])
 
     # Save image
-    plt.savefig("./mandelbrot_orbit.png", bbox_inches="tight")
+    plt.savefig(filepath, bbox_inches="tight")

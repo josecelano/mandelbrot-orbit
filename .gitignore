@@ -1,6 +1,6 @@
 __pycache__/
 # oputput files
-mandelbrot-orbit.png
+output/*.png
 # build package
 build
 dist

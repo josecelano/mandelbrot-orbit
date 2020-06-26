@@ -39,8 +39,8 @@ Install:
 
 Run:
 ```
-mandelbrot-orbit '{ZX}' '{ZY}' {NUM_ITERATIONS}
-mandelbrot-orbit -0.1 0.7 100
+mandelbrot-orbit '{ZX}' '{ZY}' {NUM_ITERATIONS} {OUPUTFILE}
+mandelbrot-orbit -0.1 0.7 100 ./mandelbrot_orbit.png
 ```
 
 The script generates an image: `mandelbrot-orbit.png`
@@ -59,7 +59,7 @@ Running the tests:
 
 Run:
 ```bash
-./bin/run '-0.1' '0.7' 100
+./bin/run '-0.1' '0.7' 100 ./output/mandelbrot_orbit.png
 ```
 
 ### Troubleshooting
