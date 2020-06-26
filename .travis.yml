@@ -8,7 +8,7 @@ script:
 - "./bin/dev-setup"
 - "./bin/test"
 - "./bin/install"
-- mandelbrot-orbit -1.3 0.0 100
+- mandelbrot-orbit -1.3 0.0 100 ./output/mandelbrot_orbit.png
 deploy:
   provider: pypi
   username: __token__
